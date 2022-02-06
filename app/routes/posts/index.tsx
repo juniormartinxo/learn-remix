@@ -1,12 +1,18 @@
 import { Link, useLoaderData } from 'remix'
 import { getPosts } from '~/post'
-//import type { Post } from '~/post'
 
+/**
+ * Cria o type para o loader
+ */
 export type Post = {
   slug: string
   title: string
 }
 
+/**
+ * Loader da rota de posts
+ * @returns {Post}
+ */
 export const loader = async () => {
   return getPosts()
 }

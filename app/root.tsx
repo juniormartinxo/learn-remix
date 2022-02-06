@@ -26,7 +26,7 @@ export default function App() {
         <Outlet />
         <ScrollRestoration />
         <Scripts />
-        <Link to='/posts'>Posts</Link>
+        <Link to='/'>Home</Link> | <Link to='/posts'>Posts</Link>
         {process.env.NODE_ENV === 'development' && <LiveReload />}
       </body>
     </html>

@@ -13,5 +13,8 @@ Testar para ver se é a melhor opção para criar meu site pessoal utilizando RE
 
 #### Aprendizado
 
-Remix possui um componente `Link` padrão para renderizar a tag `<a>` e um componente `NavLink` para navegação
-Single responsibility - é aconselhável a criação de módulos que cuidem de responsabilidades específicas
+- `app/root.tsx` é o ponto de partida
+- As páginas da aplicação ficam dentro de `app/routes`
+- Remix possui um componente `Link` padrão para renderizar a tag `<a>` e um componente `NavLink` para navegação
+- **Single responsibility** - é aconselhável a criação de módulos que cuidem de responsabilidades específicas
+- Para criar URL com parâmetros basta adicionar `$` no início do arquivo, exemplo é o arquivo `app/routes/posts/$slug.tsx`
