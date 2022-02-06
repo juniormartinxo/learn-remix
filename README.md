@@ -9,9 +9,9 @@ Testar para ver se é a melhor opção para criar meu site pessoal utilizando RE
 #### Stack
 
 - Remix;
-- Supabase (testando também com relação ao Firebase para ver qual faz mais sentido)
-- front-matter (Para analisar a string vinda dos Posts em format Markdown)
-- tiny-invariant (Uma invariant função recebe um valor e, se o valor for falso, a invariant função será lançada. Se o valor for truthy , a função não será lançada.)
+- Marked (Para transformar texto comum em Markdown)
+- Front-matter (Para analisar a string vinda dos Posts em format Markdown)
+- Tiny-invariant (Uma invariant função recebe um valor e, se o valor for falso, a invariant função será lançada. Se o valor for truthy , a função não será lançada.)
 
 #### Aprendizado
 
