@@ -36,3 +36,30 @@ a {
 li {
   list-style: none;
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+
+textarea,
+input {
+  width: 50%;
+  border: solid 1px #ccc;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+  font-family: 'Lekton', sans-serif;
+  padding: 3px;
+}
+
+button {
+  padding: 5px 8px;
+  font-size: 16px;
+  font-weight: 700;
+}
