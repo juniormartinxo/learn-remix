@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Lekton&display=swap');
+
+* {
+  font-family: 'Lekton', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.admin {
+  display: flex;
+  padding: 15px;
+}
+
+.admin > nav {
+  padding-right: 2rem;
+}
+
+.admin > main {
+  flex: 1;
+  border-left: solid 1px #ccc;
+  padding-left: 2rem;
+}
+
+em {
+  color: red;
+}
+
+a {
+  color: #ce5b78;
+}
+
+li {
+  list-style: none;
+}

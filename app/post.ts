@@ -2,6 +2,7 @@ import path from 'path'
 import fs from 'fs/promises'
 import parseFrontMatter from 'front-matter'
 import invariant from 'tiny-invariant'
+import { marked } from 'marked'
 
 /**
  * Type Post
@@ -41,7 +42,7 @@ export async function getPost(slug: string) {
   const file = await fs.readFile(filepath)
 
   // Extrai o arquivo no formato front-matter
-  const { attributes } = parseFrontMatter(file.toString())
+  const { attributes, body } = parseFrontMatter(file.toString())
 
   // Verifica se o arquivo está no formato correto
   invariant(
@@ -49,7 +50,9 @@ export async function getPost(slug: string) {
     `Post ${filepath} is missing attributes`,
   )
 
-  return { slug, title: attributes.title }
+  const html = marked(body)
+
+  return { slug, html, title: attributes.title }
 }
 
 /**
